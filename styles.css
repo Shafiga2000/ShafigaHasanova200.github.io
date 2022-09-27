@@ -11,3 +11,22 @@ body{
    font-style: italic;
    color:aqua;
  }
+
+ a:link {
+   color: rgb(118, 21, 130);
+ }
+ 
+ /* visited link */
+ a:visited {
+   color: rgb(64, 20, 81);
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color: rgb(112, 110, 143);
+ }
+ 
+ /* selected link */
+ a:active {
+   color: rgb(39, 36, 42);
+ } 
