@@ -1,6 +1,9 @@
 body{
     background-color:rgb(201, 188, 201);
     font-family: 'Times New Roman', Times, serif;
+    width: 85%;
+    margin: 60px auto;
+ 
     }
  p{
     color: rgb(25, 25, 89);
@@ -30,3 +33,10 @@ body{
  a:active {
    color: rgb(39, 36, 42);
  } 
+ 
+ li{
+   list-style:none;
+ }
+ img{
+   border-radius: 75%;
+ }
