@@ -1,6 +1,9 @@
 body{
     background-color:rgb(201, 188, 201);
+    font-family: 'Times New Roman', Times, serif;
     }
  p{
-    color: rgb(143, 143, 159);
+    color: rgb(25, 25, 89);
+    font-family: italic;
+   
  }
