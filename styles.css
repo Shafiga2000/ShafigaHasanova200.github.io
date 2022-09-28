@@ -5,17 +5,36 @@ body{
     margin: 60px auto;
  
     }
+
  p{
-    color: rgb(25, 25, 89);
-    font-family: italic;
+    color: rgb(95, 95, 135);
+    font-family:'Source Serif Pro', serif;
    
  }
+
+h1{
+  color: rgb(3, 3, 44);
+ 
+}
+
+h4{
+  color: rgb(25, 56, 64);
+  
+}
+
  .italic-text{
-   font-style: italic;
-   color:aqua;
+   color:rgb(13, 22, 57);
  }
 
- a:link {
+ .times-new-roman{
+  color:rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+/*   #single-p{}    is id   */
+
+ a:link {       /* unvisited*/
    color: rgb(118, 21, 130);
  }
  
@@ -35,8 +54,9 @@ body{
  } 
  
  li{
-   list-style:none;
+   list-style:none; /*deleted  listing*/
  }
+
  img{
    border-radius: 75%;
  }
