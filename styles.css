@@ -1,7 +1,7 @@
 body{
     background-color:rgb(201, 188, 201);
     font-family: 'Times New Roman', Times, serif;
-    width: 85%;
+    width: 90%;
     margin: 60px auto;
  
     }
@@ -9,6 +9,8 @@ body{
  p{
     color: rgb(95, 95, 135);
     font-family:'Source Serif Pro', serif;
+    font-size: large;
+    font-weight: 300;
    
  }
 
@@ -36,27 +38,93 @@ h4{
 
  a:link {       /* unvisited*/
    color: rgb(118, 21, 130);
+   font-family: 'Times New Roman', Times, serif;
  }
  
  /* visited link */
  a:visited {
    color: rgb(64, 20, 81);
+   font-family: 'Times New Roman', Times, serif;
  }
  
  /* mouse over link */
  a:hover {
    color: rgb(112, 110, 143);
+   font-family: 'Times New Roman', Times, serif;
  }
  
  /* selected link */
  a:active {
    color: rgb(39, 36, 42);
+   font-family: 'Times New Roman', Times, serif;
  } 
  
  li{
-   list-style:none; /*deleted  listing*/
+   list-style:circle;
  }
 
  img{
    border-radius: 75%;
  }
+
+ textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(65, 33, 63);
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  resize: none;
+}
+
+hr.new1 {
+  border: 5px dotted rgb(128, 73, 112);
+}
+
+
+.contact-info{
+  color:rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.serif{
+  font-family:'Source Serif Pro', serif; 
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table thead tr {
+  background-color: #84506d;
+  color: #ffffff;
+  text-align: left;
+ 
+}
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #980077;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #98007c;
+}
