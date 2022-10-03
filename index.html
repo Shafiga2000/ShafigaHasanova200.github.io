@@ -20,7 +20,7 @@
          <td>
            
     <h2 title="I'm a header">Shafiga Hasanova</h2>
-    <img src="tree.jpg" alt="Image of Sakura tree" width="200px" height="200px">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border ="0" src="tree.jpg" alt="Image of Sakura tree" width="200px" height="200px">
    </td>
    <td>
 
@@ -78,6 +78,16 @@
    <a  href="contact.html" target="_blank"> Contact me.</a><br>
    <a  href="Education.html" target="_blank"> My Education</a>
 
-
+   <script>
+      function bigImg(x) {
+        x.style.height = "250px";
+        x.style.width = "290x";
+      }
+      
+      function normalImg(x) {
+        x.style.height = "200px";
+        x.style.width = "200px";
+      }
+      </script>
 </body>
 </html>
