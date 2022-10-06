@@ -2,7 +2,7 @@ body{
     background-color:rgb(201, 188, 201);
     font-family: 'Times New Roman', Times, serif;
     width: 90%;
-    margin: 60px auto;
+   margin: 60px auto;
  
     }
     .container{
@@ -87,7 +87,7 @@ h4{
  } 
  
  li{
-   list-style:circle;
+   list-style:none;
  }
 
  img{
@@ -157,14 +157,41 @@ hr.new1 {
 }
 
 div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+     position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+       width: 60%;
+
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+
   
-  padding: 15px;
-  background-color: #a785a5;
-  border: 2px solid #afabab;
-  border-radius: 12px;
+  .na-v {
+    float: left;
+  
+  }
+  
+  .na-v a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: wavy;
+  }
+  
+  .na-v a:hover:not(.active) {
+    background-color: rgba(193, 117, 184, 0.6);
+  }
+  
+  .na-v a.active {
+    color: white;
+    background-color: rgb(128, 73, 112);
+  }
 
 
-}
