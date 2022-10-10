@@ -226,7 +226,7 @@ div.sticky {
 
   /* Change the link color on hover */
   .navig a:hover {
-    background-color: rgba(193, 117, 184, 0.6);
+    
     color:#FFFFFF;
     text-decoration: dotted;
     font-size: large;
