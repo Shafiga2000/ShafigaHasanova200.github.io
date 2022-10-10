@@ -212,6 +212,10 @@ div.sticky {
     display:inline-block;
 
   }
+  .navig:hover{
+
+    background-color:rgba(193, 117, 184, 0.6);
+  }
    .navig a {
     font-family:Calibri, Arial;
     font-size:18px;
@@ -224,5 +228,15 @@ div.sticky {
   .navig a:hover {
     background-color: rgba(193, 117, 184, 0.6);
     color:#FFFFFF;
+    text-decoration: dotted;
+    font-size: large;
+    font-family: cursive;
   }
   
+  .navig a:focus {
+
+    text-decoration:underline;
+
+    color:blue
+
+}
