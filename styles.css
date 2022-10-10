@@ -194,3 +194,35 @@ div.sticky {
   }
 
 
+  .navigation{
+   
+
+    height:auto;
+    list-style:none;
+    margin-right:40px;
+  }
+  .navig{
+    width:200px;
+    height:25px;
+    margin:5px;
+    padding:5px;
+    background-color:rgb(128, 73, 112);
+    border:none;
+    text-align:center;
+    display:inline-block;
+
+  }
+   .navig a {
+    font-family:Calibri, Arial;
+    font-size:18px;
+    font-weight:bold;
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  /* Change the link color on hover */
+  .navig a:hover {
+    background-color: rgba(193, 117, 184, 0.6);
+    color:#FFFFFF;
+  }
+  
