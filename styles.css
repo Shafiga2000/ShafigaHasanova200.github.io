@@ -109,6 +109,13 @@ h4{
 hr.new1 {
   border: 5px dotted rgb(128, 73, 112);
 }
+.hr-washed {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	box-shadow: 0 0 10px 1px rgb(183, 93, 154);
+}
 
 
 .contact-info{
