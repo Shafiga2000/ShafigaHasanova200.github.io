@@ -8,14 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="search-box">
+    <div class="forCity">
     <h3>City Name</h3>
+    <div class="input-btn">
     <input autocomplete="off" type="text" placeholder="Search..." id="cityName">
     <button id="cityBtn"><i class="bi bi-search"></i></button>
+      </div>
+      <div class="validationForName"></div>
+    </div>
+    <div class="forCoordinant">
     <h3>Latitude And Longitude</h3>
+    <div>
     <input type="text" autocomplete="off" placeholder="Search..." id="lat">
     <input type="text" autocomplete="off" placeholder="Search..." id="lon">
     <button id="coordinantBtn"><i class="bi bi-search"></i></button>
+</div>
+<div class="validationForCoor"></div>
+    </div>
     </div>
 </body>
 </html>
