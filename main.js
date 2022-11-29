@@ -15,3 +15,4 @@ function requestApiForCityName(name) {
 function weatherDetailsForCity(info) {
     console.log(info)
 }
+
