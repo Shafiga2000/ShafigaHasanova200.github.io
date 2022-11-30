@@ -9,15 +9,17 @@ cityBtn.addEventListener('click', () => requestApiForCityName(cityName.value))
 
 function requestApiForCityName(name) {
     if (name.trim().length != 0) {
-    fetch(`${url}weather?q=${name}&appid=${key}&units=metric&lang=en`)
-        .then(respons => respons.json())
-        .then(result => weatherDetailsForCity(result))
+        fetch(`${url}weather?q=${name}&appid=${key}&units=metric&lang=en`)
+            .then(respons => respons.json())
+            .then(result => weatherDetailsForCity(result))
+    }
+    else {
+        validationForName.innerText = "Please write city name";
+    }
 }
 
-else {
-    validationForName.innerText = "Please write city name";
-}
-}
+
+
 function weatherDetailsForCity(info) {
     console.log(info.name);
     console.log(Math.round(info.main.temp));
