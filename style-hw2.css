@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #C95E67;
+}
+
+.search-boxs {
+    padding-top: 50px;
+    min-height: calc(100vh - 500px);
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.search-boxs div * {
+    text-align: center;
+}
+
+.search-boxs .forCity .input-btn input {
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+}
+
+.forCity .input-btn button,
+.forCoordinant button {
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+    height: 100%;
+    width: 35px;
+}
+
+.forCity .input-btn button i,
+.forCoordinant button i {
+    font-size: 100%;
+}
+
+.search-boxs .forCoordinant div input {
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-boxs .forCurrentLocation div button {
+    width: 50px;
+    height: 50px;
+    background-color: #efefef;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-boxs .forCurrentLocation div button i {
+    font-size: 20px;
+}
