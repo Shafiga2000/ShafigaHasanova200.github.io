@@ -84,5 +84,58 @@ function resetValues() {
     windDirection.innerText = "";
 }
 
+//Wind Direction
+function getDirection(degree) {
+    if (degree == 0 || degree == 360) {
+        windDirection.innerText = "North";
+    }
+    else if (degree > 0 && degree < 45) {
+        windDirection.innerText = "NNE";
+    }
+    if (degree == 45) {
+        windDirection.innerText = "NE";
+    }
+    if (degree > 45 && degree < 90) {
+        windDirection.innerText = "ENE";
+    }
+    if (degree == 90) {
+        windDirection.innerText = "East";
+    }
+    if (degree > 90 && degree < 135) {
+        windDirection.innerText = "ESE";
+    }
+    if (degree == 135) {
+        windDirection.innerText = "SE";
+    }
+    if (degree > 135 && degree < 180) {
+        windDirection.innerHTML = "SSE";
+    }
+    if (degree == 180) {
+        windDirection.innerText = "South";
+    }
+    if (degree > 180 && degree < 225) {
+        windDirection.innerText = "SSW";
+    }
+    if (degree == 225) {
+        windDirection.innerText = "SW";
+    }
+    if (degree > 225 && degree < 270) {
+        windDirection.innerText = "WSW";
+    }
+    if (degree == 270) {
+        windDirection.innerText = "West";
+    }
+    if (degree > 270 && degree < 315) {
+        windDirection.innerText = "WNW";
+    }
+    if (degree == 315) {
+        windDirection.innerText = "NW";
+    }
+    if (degree > 315 && degree < 360) {
+        windDirection.innerText = "NNW";
+    }
+}
+
+
 
 
