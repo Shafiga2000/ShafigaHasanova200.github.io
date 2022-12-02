@@ -1,6 +1,20 @@
 const url = 'https://api.openweathermap.org/data/2.5/';
 const key = '45f006a9f6651c2bd89393c3e1976b8c';
 
+//values
+let city = document.querySelector(".city");
+let temp = document.querySelector(".temp");
+let condition = document.querySelector(".condition");
+let description = document.querySelector(".description");
+let minmax = document.querySelector(".minmax");
+let realFeel = document.querySelector(".real-feel");
+let pressure = document.querySelector(".pressure");
+let windSpeed = document.querySelector(".wind-speed");
+let humidity = document.querySelector(".humidity");
+let windDirection = document.querySelector(".wind-direction");
+let responseTime = document.querySelector(".date-response")
+
+
 const cityName = document.getElementById('cityName');
 const cityBtn = document.getElementById('cityBtn');
 
@@ -30,10 +44,12 @@ function getResponseDate() {
     const utcStr = new Date();
     responseTime.innerText = utcStr.toLocaleTimeString();
 }
+
+//Validations
 const validationForName = document.querySelector('.validationForName')
 const validationForCoor = document.querySelector('.validationForCoor');
 const validationForCurrLocation = document.querySelector(".validationForCurrentLocation");
-//Validations
+
 function resetValidationForCityName() {
     lat.value = "";
     lon.value = "";
@@ -53,4 +69,20 @@ function resetValidationForCorr() {
     validationForName.innerText = "";
     validationForCurrLocation.innerText = "";
 }
+
+//Reset all values
+function resetValues() {
+    city.innerText = "";
+    temp.innerText = "";
+    condition.innerText = "";
+    description.innerText = "";
+    minmax.innerText = "";
+    realFeel.innerText = "";
+    pressure.innerText = "";
+    windSpeed.innerText = "";
+    humidity.innerText = "";
+    windDirection.innerText = "";
+}
+
+
 
