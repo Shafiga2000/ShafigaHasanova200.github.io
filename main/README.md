@@ -1,1 +1,0 @@
-# ShafigaHasanova200.github.io
