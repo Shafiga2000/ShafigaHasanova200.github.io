@@ -28,7 +28,7 @@ function requestApiForCityName(name) {
             .then(result => {
                 if (result.cod == 200) {
                     resetValidationForCityName();
-                    getCountryName(result)
+                    requestApiForCountryName(result);
                     getResponseDate();
                 }
                 else {
@@ -48,7 +48,7 @@ function requestApiForCityName(name) {
 
 }
 
-function getCountryName(info) {
+function  requestApiForCountryName(info) {
     fetch(`https://restcountries.com/v3.1/alpha?codes=${info.sys.country}`)
         .then(response => response.json())
         .then(result => weatherDetailsForCity(result, info));
@@ -57,13 +57,13 @@ function getCountryName(info) {
 function weatherDetailsForCity(result, info) {
     validationForName.innerText = "";
 
-    city.innerText = `${info.name} ,${result[0].name.common}`
+    city.innerText = `${info.name}, ${result[0].name.common}`
     temp.innerText = `${Math.round(info.main.temp)}°C`
     condition.innerText = `${info.weather[0].main}`
     description.innerText = `${info.weather[0].description}`
     minmax.innerText = `${Math.round(info.main.temp_min)}°C / ${Math.round(info.main.temp_max)}°C`
     realFeel.innerText = `${Math.round(info.main.feels_like)}°C`
-    pressure.innerText = `${info.main.pressure * 100} N/m2`
+    pressure.innerText = `${info.main.pressure * 100}  Pa`
     windSpeed.innerText = `${info.wind.speed} m/s`
     humidity.innerText = `${info.main.humidity}%`
     getDirection(info.wind.deg);
@@ -73,8 +73,8 @@ function weatherDetailsForCity(result, info) {
 
 //Lat and Lon intputs
 const corrBtn = document.getElementById('coordinantBtn');
-const lat = document.getElementById('lat')
-const lon = document.getElementById('lon')
+const lat = document.getElementById('lat');
+const lon = document.getElementById('lon');
 corrBtn.addEventListener('click', () => requestApiForCoordinant(lat.value, lon.value));
 
 function requestApiForCoordinant(value1, value2) {
@@ -111,15 +111,15 @@ function weatherDetailsForCorr(info) {
             .then(result => getCountryNameForCorr(result, info));
     }
     else if (info.name != "") {
-        city.innerText = `${info.name},Country name not found`
+        city.innerText = `${info.name}, Country name not found`
     }
     else {
-        city.innerText = "City name not found ,Country name not found";
+        city.innerText = "City name not found, Country name not found";
     }
     CoordinantAndCurrentInnerText(info)
 }
 function getCountryNameForCorr(result, info) {
-    city.innerText = `${info.name} , ${result[0].name.common}`
+    city.innerText = `${info.name}, ${result[0].name.common}`
 }
 
 //Current cordiant button
@@ -158,15 +158,15 @@ function weatherDetailsForCurrentPosition(info) {
             .then(result => getCountryNameForCurrentLocation(result, info));
     }
     else if (info.name != "") {
-        city.innerText = `${info.name},Country name not found`
+        city.innerText = `${info.name}, Country name not found`
     }
     else {
-        city.innerText = "City name not found ,Country name not found";
+        city.innerText = "City name not found, Country name not found";
     }
     CoordinantAndCurrentInnerText(info);
 }
 function getCountryNameForCurrentLocation(result, info) {
-    city.innerText = `${info.name} ,${result[0].name.common}`
+    city.innerText = `${info.name}, ${result[0].name.common}`
 }
 
 
@@ -187,7 +187,7 @@ function CoordinantAndCurrentInnerText(info) {
     description.innerText = `${info.weather[0].description}`
     minmax.innerText = `${Math.round(info.main.temp_min)}°C / ${Math.round(info.main.temp_max)}°C`
     realFeel.innerText = `${Math.round(info.main.feels_like)}°C`
-    pressure.innerText = `${info.main.pressure * 100} N/m2`
+    pressure.innerText = `${info.main.pressure * 100}  Pa`
     windSpeed.innerText = `${info.wind.speed} m/s`
     humidity.innerText = `${info.main.humidity}%`
     getDirection(info.wind.deg);
